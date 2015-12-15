@@ -1,0 +1,230 @@
+
+
+
+body{
+
+  background: #f3f6f6;
+  font-family: sans-serif;
+}
+img{
+  max-width: 100%;
+}
+.navBar li {
+  display: inline;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+.wrapper{
+  margin: 0 auto;
+  position: relative;
+  width: 1200px;
+  max-width: 100%;
+  overflow: hidden;
+}
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+.firstNav {
+overflow: hidden;
+background: white;
+}
+.secondNav{
+overflow: hidden;
+background: white;
+}
+
+.logoMenu{
+  padding-bottom: 10px;
+}
+.sliderWrapper{
+background: white;
+
+}
+.item{
+border:2px solid white;
+background: white;
+display: inline-block;
+margin: 0 10px 10px 10px;
+position: relative;
+}
+.itemBody{
+
+  margin: 5px;
+  padding: 5px;
+}
+.itemBody h4, h5{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.itemBody h5{
+  color: #d1d1d1;
+}
+.itemBody p{
+  color: #37bbec;
+  font-weight: bold;
+}
+.oldPrice{
+  color: black;
+  text-decoration: line-through;
+  color: #d1d1d1;
+}
+.sideMenu{
+width: 25%;
+}
+.itemMenuWrap{
+position: relative;
+overflow: hidden;
+}
+.itemGrid{
+width: 75%;
+}
+.item img{
+max-width: 100%;
+}
+
+/*Item buy and info buttons
+*/
+
+.item:hover .kupiBtn{
+  display: block;
+}
+.kupiBtn{
+  position: absolute;
+  display: none;
+  top: 20%;
+  left: 23%;
+}
+.item:hover .infoBtn{
+  display: block;
+}
+.infoBtn{
+  position: absolute;
+  display: none;
+  top: 36%;
+  left: 23%;
+}
+
+
+.btn {
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  background: #44c0ed;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+
+
+.btnInfo{
+  background: #fbcf00;
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 27px 10px 27px;
+  text-decoration: none;
+}
+
+
+/*
+side CATEGORIES drop toggle menu
+*/
+.menuWrap{
+  width: 100%;
+  max-width: 272px;
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+}
+.menuWrap p{
+  margin: 1em;
+
+}
+.menuWrap li{
+    font-size: 14px;
+    padding: 0.8em;
+    padding-left: 1em;
+}
+.togMenu{
+    background: white;
+    overflow: hidden;
+    border-bottom: 1px solid #fafafa;
+}
+.catPanel{
+    overflow: hidden;
+    background: white;
+}
+.catPanel ul{
+    list-style: none;
+    padding-left: 0;
+  }
+.menuStyle >li:nth-child(even){
+  background: #fafafa;
+}
+.menuStyle{
+  margin: 0;
+}
+
+/*COLOR menu
+*/
+.togMenuC{
+    background: white;
+    overflow: hidden;
+    border-bottom: 1px solid #fafafa;
+}
+.colPanel{
+    overflow: hidden;
+    background: white;
+}
+.colPanel ul{
+    list-style: none;
+    padding-left: 0;
+  }
+.menuStyle >li:nth-child(even){
+  background: #fafafa;
+}
+.menuStyle{
+  margin: 0;
+}
+/*MATERIAL menu
+*/
+.togMenuM{
+    background: white;
+    overflow: hidden;
+    border-bottom: 1px solid #fafafa;
+}
+.matPanel{
+    overflow: hidden;
+    background: white;
+}
+.matPanel ul{
+    list-style: none;
+    padding-left: 0;
+  }
+.menuStyle >li:nth-child(even){
+  background: #fafafa;
+}
+.menuStyle{
+  margin: 0;
+}
+.togMenuO{
+    background: white;
+    overflow: hidden;
+    border-bottom: 1px solid #fafafa;
+}
