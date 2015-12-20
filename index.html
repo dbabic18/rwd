@@ -1,266 +1,338 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link href='https://fonts.googleapis.com/css?family=Lato:400,900' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="css/main.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-    $(".togMenu").click(function(){
-        $(".catPanel").toggle();
-    });
-});
-$(document).ready(function(){
-    $(".togMenuC").click(function(){
-        $(".colPanel").toggle();
-    });
-});
-$(document).ready(function(){
-    $(".togMenuM").click(function(){
-        $(".matPanel").toggle();
-    });
-});
-</script>
+
 </head>
 <body>
- <div class="wrapper">
-   <div class="navBar">
-   <div class="firstNav">
-    <ul class="left">
-     <li><a href="#">Home</a></li>
-     <li><a href="#">About</a></li>
-     <li><a href="#">Service</a></li>
-     <li><a href="#">Contacts</a></li>
-    </ul>
+ <div class="wrapper"><!-- GLOBAL WRAPPER -->
+    <div class="navWrapper clearfix"><!-- NAVIGATION WRAPPER -->
+      <div class="navBar"><!-- NAV CONTAINER -->
 
+       <div class="firstNav"><!-- FIRST ROW OF NAVIGATION -->
+        <ul class="left">
+         <li><a href="#">Home</a></li>
+         <li><a href="#">About</a></li>
+         <li><a href="#">Service</a></li>
+         <li><a href="#">Contacts</a></li>
+        </ul>
+        <!-- right contact data -->
+        <ul class="contactMenu right">
+         <li><a href="#">8 800 909 50 60</a></li>
+         <li><a href="#">support@domain.com</a></li>
+        </ul>
+      </div><!-- END   FIRST ROW OF NAVIGATION-->
 
-    <ul class="right">
-     <li><a href="#">8 800 909 50 60</a></li>
-     <li><a href="#">support@domain.com</a></li>
-    </ul>
-  </div>
+      <div class="secondNav"><!-- SECOND ROW OF NAVIGATION -->
+        <ul class="left logoMenu">
+          <div class="logo clearfix">
+            <li><a href="#"><img src="images/Logo.png"/></a></li>
+          </div>
+          <div class="dropMenus">
+            <li class="button"><a href="#">KITCHEN <img src="images/arrow.png" /></a></li>
+            <li class="button"><a href="#">LIVING ROOM <img src="images/arrow.png" /></a></li>
+            <li class="button"><a href="#">BEDROOM <img src="images/arrow.png" /></a></li>
+            <li class="button"><a href="#">CHILDREN'S <img src="images/arrow.png" /></a></li>
+            <li class="button"><a href="#">TEXTILES <img src="images/arrow.png" /></a></li>
+          </div>
+        </ul>
+        <!-- right icon menu -->
+        <ul class="iconMenu right">
+          <li><a href="#"><img src="images/r.png"/></a></li>
+          <li><a href="#"><img src="images/log.png"/></a></li>
+          <li><a href="#"><img src="images/s.png"/></a></li>
+        </ul>
+      </div><!-- END  SECOND ROW OF NAVIGATION -->
+    </div><!-- END NAV CONTAINER -->
+  </div><!-- END NAV WRAPPER -->
 
-  <div class="secondNav">
+  <div class="sliderWrapper clearfix">
 
-  <ul class="left logoMenu">
-    <li><a href="#"><img src="images/Logo.png"/></a></li>
-    <li class="button"><a href="#">KITCHEN</a></li>
-    <li class="button"><a href="#">LIVING ROOM</a></li>
-    <li class="button"><a href="#">BEDROOM</a></li>
-    <li class="button"><a href="#">CHILDREN'S</a></li>
-    <li class="button"><a href="#">TEXTILES</a></li>
-  </ul>
-  <ul class="right">
-    <li><a href="#"><img src="images/r.png"/></a></li>
-    <li><a href="#"><img src="images/log.png"/></a></li>
-    <li><a href="#"><img src="images/s.png"/></a></li>
-  </ul>
-  </div>
-</div>
-
-  <div class="sliderWrapper">
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
-  </div>
-  <div class="itemMenuWrap"><!-- WRAPPER FOR SIDE MENUS AND GRID OF ITEMS-->
-    <div class="sideMenu left">
-      <div class="menuWrap">
-        <div class="togMenu">
-          <p>CATEGORIES</p>
-        </div>
-        <div class="catPanel">
-          <ul class="menuStyle">
-            <li>Tea and Coffee</li>
-            <li>Cutlery</li>
-            <li>Chopping Boards</li>
-            <li>Textile</li>
-            <li>Household Appliances</li>
-            <li>Pots</li>
-            <li>Barbecue</li>
+    <div class="slider">
+      <input type="radio" id="control1" name="controls" checked="checked"/>
+        <label for="control1"></label>
+        <input type="radio" id="control2" name="controls"/>
+        <label for="control2"></label>
+        <input type="radio" id="control3" name="controls"/>
+        <label for="control3"></label>
+        <div class="sliderinner">
+          <ul>
+            <li>
+              <div class="promoSlide">
+                <h1>Quisque Porttitor</h1>
+                <p>
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod temposadasdasd ss
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempo
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempo
+                </p>
+                <a class="btn btnDetails" href="#">Detail</a>
+                <p class="price"><span class="oldPromoPrice">$150 </span> $120</p>
+                </div>
+            </li>
+            <li> </li>
+            <li> </li>
           </ul>
+        </div><!-- END  SLIDER INNER-->
+
+    </div><!--END  SLIDER-->
+    <div class="promoImage">
+      <img src="http://placehold.it/560x400">
+    </div>
+  </div><!--END SLIDER WRAPPER -->
+
+
+
+
+  <div class="bodyWrapper"><!-- BODY WRAPPER -->
+
+
+    <div class="itemMenuWrap "><!-- WRAPPER FOR SIDE MENUS AND GRID OF ITEMS-->
+      <div class="sideMenu left clearfix">
+        <div class="menuWrap">
+          <div class="togMenu">
+            <p>CATEGORIES</p>
+          </div>
+          <div class="catPanel">
+            <ul class="menuStyle">
+              <li>Tea and Coffee</li>
+              <li>Cutlery</li>
+              <li>Chopping Boards</li>
+              <li>Textile</li>
+              <li>Household Appliances</li>
+              <li>Pots</li>
+              <li>Barbecue</li>
+            </ul>
+          </div>
         </div>
-      </div>
 
-      <div class="menuWrap">
-        <div class="togMenuC">
-          <p>SELECT COLOR</p>
+        <div class="menuWrap">
+          <div class="togMenuC">
+            <p>SELECT COLOR</p>
+          </div>
+          <div class="colPanel">
+            <ul class="menuStyle" id="colors">
+              <li id="purple">Purple</li>
+              <li id="blue">Blue</li>
+              <li id="green">Green</li>
+              <li id="yellow">Yellow</li>
+              <li id="orange">Orange</li>
+              <li id="red">Red</li>
+              <li id="gray">Gray</li>
+              <li id="black">Black</li>
+              <li id="multicolor">Multicolor</li>
+            </ul>
+          </div>
         </div>
-        <div class="colPanel">
-          <ul class="menuStyle">
-            <li>Purple</li>
-            <li>Blue</li>
-            <li>Green</li>
-            <li>Yellow</li>
-            <li>Orange</li>
-            <li>Red</li>
-            <li>Gray</li>
-            <li>Black</li>
-            <li>Multicolor</li>
-          </ul>
+
+        <div class="menuWrap">
+          <div class="togMenuM">
+            <p>MATERIAL</p>
+          </div>
+          <div class="matPanel">
+            <ul class="menuStyle">
+              <li>All</li>
+              <li>Steel</li>
+              <li>Plastic</li>
+              <li>Ceramics</li>
+              <li>Wood</li>
+            </ul>
+          </div>
         </div>
-      </div>
-
-      <div class="menuWrap">
-        <div class="togMenuM">
-          <p>MATERIAL</p>
+        <div class="menuWrap">
+        <div class="togMenuO">
+          <p>MORE OPTIONS</p>
         </div>
-        <div class="matPanel">
-          <ul class="menuStyle">
-            <li>All</li>
-            <li>Steel</li>
-            <li>Plastic</li>
-            <li>Ceramics</li>
-            <li>Wood</li>
-          </ul>
         </div>
-      </div>
-      <div class="menuWrap">
-      <div class="togMenuO">
-        <p>MORE OPTIONS</p>
-      </div>
-      </div>
-      <a href="#"><img src="images/img1.png" /></a>
-    </div><!-- END  SIDE MENU-->
+        <a href="#"><img src="images/img1.png" /></a>
+      </div><!-- END  SIDE MENU-->
 
 
 
-    <div class="itemGrid right"><!-- GRID OF ITEMS -->
+      <div class="itemGrid right"><!-- GRID OF ITEMS -->
 
-      <div class="item">
-        <img src="http://placehold.it/260x200">
-        <a class="kupiBtn btn" href="#">Add to cart</a>
-        <a class="infoBtn btnInfo" href="#">More info</a>
-        <div class="itemBody">
-          <h4>PLATE OF WOOD</h4>
-          <h5>Kitchen utensils</h5>
-          <p>$4.50 <small class="oldPrice">$6.70</small></p>
+        <div class="item">
+          <img src="http://placehold.it/260x200">
+          <a class="kupiBtn btn" href="#">Add to cart</a>
+          <a class="infoBtn btnInfo" href="#">More info</a>
+          <div class="itemBody">
+            <h4>PLATE OF WOOD</h4>
+            <h5>Kitchen utensils</h5>
+            <p>$4.50 <small class="oldPrice">$6.70</small></p>
+          </div>
         </div>
-      </div>
 
-      <div class="item">
-        <img src="http://placehold.it/260x200">
-        <a class="kupiBtn btn" href="#">Add to cart</a>
-        <a class="infoBtn btnInfo" href="#">More info</a>
-        <div class="itemBody">
-          <h4>TRAY WITH BIRDS</h4>
-          <h5>Kitchen utensils</h5>
-          <p>$4.50 <small class="oldPrice">$6.70</small></p>
+        <div class="item">
+          <img src="http://placehold.it/260x200">
+          <a class="kupiBtn btn" href="#">Add to cart</a>
+          <a class="infoBtn btnInfo" href="#">More info</a>
+          <div class="itemBody">
+            <h4>TRAY WITH BIRDS</h4>
+            <h5>Kitchen utensils</h5>
+            <p>$4.50 <small class="oldPrice">$6.70</small></p>
+          </div>
         </div>
-      </div>
 
-      <div class="item">
-        <img src="http://placehold.it/260x200">
-        <a class="kupiBtn btn" href="#">Add to cart</a>
-        <a class="infoBtn btnInfo" href="#">More info</a>
-        <div class="itemBody">
-          <h4>TRAY WITH BIRDS</h4>
-          <h5>Kitchen utensils</h5>
-          <p>$4.50 <small class="oldPrice">$6.70</small></p>
+        <div class="item">
+          <img src="http://placehold.it/260x200">
+          <a class="kupiBtn btn" href="#">Add to cart</a>
+          <a class="infoBtn btnInfo" href="#">More info</a>
+          <div class="itemBody">
+            <h4>TRAY WITH BIRDS</h4>
+            <h5>Kitchen utensils</h5>
+            <p>$4.50 <small class="oldPrice">$6.70</small></p>
+          </div>
         </div>
-      </div>
 
-      <div class="item">
-        <img src="http://placehold.it/260x200">
-        <a class="kupiBtn btn" href="#">Add to cart</a>
-        <a class="infoBtn btnInfo" href="#">More info</a>
-        <div class="itemBody">
-          <h4>TRAY WITH BIRDS</h4>
-          <h5>Kitchen utensils</h5>
-          <p>$4.50 <small class="oldPrice">$6.70</small></p>
+        <div class="item">
+          <img src="http://placehold.it/260x200">
+          <a class="kupiBtn btn" href="#">Add to cart</a>
+          <a class="infoBtn btnInfo" href="#">More info</a>
+          <div class="itemBody">
+            <h4>TRAY WITH BIRDS</h4>
+            <h5>Kitchen utensils</h5>
+            <p>$4.50 <small class="oldPrice">$6.70</small></p>
+          </div>
         </div>
-      </div>
 
-      <div class="item">
-        <img src="http://placehold.it/260x200">
-        <a class="kupiBtn btn" href="#">Add to cart</a>
-        <a class="infoBtn btnInfo" href="#">More info</a>
-        <div class="itemBody">
-          <h4>PLATE OF WOOD</h4>
-          <h5>Kitchen utensils</h5>
-          <p>$4.50 <small class="oldPrice">$6.70</small></p>
+        <div class="item">
+          <img src="http://placehold.it/260x200">
+          <a class="kupiBtn btn" href="#">Add to cart</a>
+          <a class="infoBtn btnInfo" href="#">More info</a>
+          <div class="itemBody">
+            <h4>PLATE OF WOOD</h4>
+            <h5>Kitchen utensils</h5>
+            <p>$4.50 <small class="oldPrice">$6.70</small></p>
+          </div>
         </div>
-      </div>
 
-      <div class="item">
-        <img src="http://placehold.it/260x200">
-        <a class="kupiBtn btn" href="#">Add to cart</a>
-        <a class="infoBtn btnInfo" href="#">More info</a>
-        <div class="itemBody">
-          <h4>TRAY WITH BIRDS</h4>
-          <h5>Kitchen utensils</h5>
-          <p>$4.50 <small class="oldPrice">$6.70</small></p>
+        <div class="item">
+          <img src="http://placehold.it/260x200">
+          <a class="kupiBtn btn" href="#">Add to cart</a>
+          <a class="infoBtn btnInfo" href="#">More info</a>
+          <div class="itemBody">
+            <h4>TRAY WITH BIRDS</h4>
+            <h5>Kitchen utensils</h5>
+            <p>$4.50 <small class="oldPrice">$6.70</small></p>
+          </div>
         </div>
-      </div>
 
-      <div class="item">
-        <img src="http://placehold.it/260x200">
-        <a class="kupiBtn btn" href="#">Add to cart</a>
-        <a class="infoBtn btnInfo" href="#">More info</a>
-        <div class="itemBody">
-          <h4>TRAY WITH BIRDS</h4>
-          <h5>Kitchen utensils</h5>
-          <p>$4.50 <small class="oldPrice">$6.70</small></p>
+        <div class="item">
+          <img src="http://placehold.it/260x200">
+          <a class="kupiBtn btn" href="#">Add to cart</a>
+          <a class="infoBtn btnInfo" href="#">More info</a>
+          <div class="itemBody">
+            <h4>TRAY WITH BIRDS</h4>
+            <h5>Kitchen utensils</h5>
+            <p>$4.50 <small class="oldPrice">$6.70</small></p>
+          </div>
         </div>
-      </div>
 
-      <div class="item">
-        <img src="http://placehold.it/260x200">
-        <a class="kupiBtn btn" href="#">Add to cart</a>
-        <a class="infoBtn btnInfo" href="#">More info</a>
-        <div class="itemBody">
-          <h4>TRAY WITH BIRDS</h4>
-          <h5>Kitchen utensils</h5>
-          <p>$4.50 <small class="oldPrice">$6.70</small></p>
+        <div class="item">
+          <img src="http://placehold.it/260x200">
+          <a class="kupiBtn btn" href="#">Add to cart</a>
+          <a class="infoBtn btnInfo" href="#">More info</a>
+          <div class="itemBody">
+            <h4>TRAY WITH BIRDS</h4>
+            <h5>Kitchen utensils</h5>
+            <p>$4.50 <small class="oldPrice">$6.70</small></p>
+          </div>
         </div>
-      </div>
 
-      <div class="item">
-        <img src="http://placehold.it/260x200">
-        <a class="kupiBtn btn" href="#">Add to cart</a>
-        <a class="infoBtn btnInfo" href="#">More info</a>
-        <div class="itemBody">
-          <h4>PLATE OF WOOD</h4>
-          <h5>Kitchen utensils</h5>
-          <p>$4.50 <small class="oldPrice">$6.70</small></p>
+        <div class="item">
+          <img src="http://placehold.it/260x200">
+          <a class="kupiBtn btn" href="#">Add to cart</a>
+          <a class="infoBtn btnInfo" href="#">More info</a>
+          <div class="itemBody">
+            <h4>PLATE OF WOOD</h4>
+            <h5>Kitchen utensils</h5>
+            <p>$4.50 <small class="oldPrice">$6.70</small></p>
+          </div>
         </div>
-      </div>
 
-      <div class="item">
-        <img src="http://placehold.it/260x200">
-        <a class="kupiBtn btn" href="#">Add to cart</a>
-        <a class="infoBtn btnInfo" href="#">More info</a>
-        <div class="itemBody">
-          <h4>TRAY WITH BIRDS</h4>
-          <h5>Kitchen utensils</h5>
-          <p>$4.50 <small class="oldPrice">$6.70</small></p>
+        <div class="item">
+          <img src="http://placehold.it/260x200">
+          <a class="kupiBtn btn" href="#">Add to cart</a>
+          <a class="infoBtn btnInfo" href="#">More info</a>
+          <div class="itemBody">
+            <h4>TRAY WITH BIRDS</h4>
+            <h5>Kitchen utensils</h5>
+            <p>$4.50 <small class="oldPrice">$6.70</small></p>
+          </div>
         </div>
-      </div>
-      <div class="item">
-        <img src="http://placehold.it/260x200">
-        <a class="kupiBtn btn" href="#">Add to cart</a>
-        <a class="infoBtn btnInfo" href="#">More info</a>
-        <div class="itemBody">
-          <h4>TRAY WITH BIRDS</h4>
-          <h5>Kitchen utensils</h5>
-          <p>$4.50 <small class="oldPrice">$6.70</small></p>
+
+        <div class="item">
+          <img src="http://placehold.it/260x200">
+          <a class="kupiBtn btn" href="#">Add to cart</a>
+          <a class="infoBtn btnInfo" href="#">More info</a>
+          <div class="itemBody">
+            <h4>TRAY WITH BIRDS</h4>
+            <h5>Kitchen utensils</h5>
+            <p>$4.50 <small class="oldPrice">$6.70</small></p>
+          </div>
         </div>
-      </div>
-      <div class="item">
-        <img src="http://placehold.it/260x200">
-        <a class="kupiBtn btn" href="#">Add to cart</a>
-        <a class="infoBtn btnInfo" href="#">More info</a>
-        <div class="itemBody">
-          <h4>TRAY WITH BIRDS</h4>
-          <h5>Kitchen utensils</h5>
-          <p>$4.50 <small class="oldPrice">$6.70</small></p>
+
+        <div class="item">
+          <img src="http://placehold.it/260x200">
+          <a class="kupiBtn btn" href="#">Add to cart</a>
+          <a class="infoBtn btnInfo" href="#">More info</a>
+          <div class="itemBody">
+            <h4>TRAY WITH BIRDS</h4>
+            <h5>Kitchen utensils</h5>
+            <p>$4.50 <small class="oldPrice">$6.70</small></p>
+          </div>
         </div>
-      </div>
-    </div><!--  END  GRID OF ITEMS -->
-  </div><!--  END   WRAPPER FOR SIDE MENUS AND GRID OF ITEMS-->
 
-</div><!--  END   GLOBAL WRAPPER>
+      </div><!--  END  GRID OF ITEMS -->
+    </div><!--  END   WRAPPER FOR SIDE MENUS AND GRID OF ITEMS-->
+  </div><!-- END   BODY WRAPPER-->
 
+  <div class="footerWrapper">
+    <div class="footerMenu">
+      <ul class="clearfix">
+        <li>
+          <div class="footerLink left">
+            <a href="#">CUSTOMER LOYALTY PROGRAMS &nbsp <img src="images/fa.png"></a>
+          </div>
+          <div class="footerImg right">
+            <img src="images/clp.png"/>
+          </div>
+        </li>
 
+        <li>
+          <div class="footerLink left">
+            <a href="#">WORLDWIDE SHIPPING &nbsp <img src="images/fa.png"></a>
+          </div>
+          <div class="footerImg right">
+            <img src="images/ws.png"/>
+          </div>
+        </li>
+
+        <li>
+          <div class="footerLink left">
+            <a href="#">24/7 TECHNICAL SUPPORT &nbsp <img src="images/fa.png"></a>
+          </div>
+          <div class="footerImg right">
+            <img src="images/ts.png"/>
+          </div>
+        </li>
+
+        <li>
+          <div class="footerLink left">
+            <a href="#">RETURNS AND EXCHANGES &nbsp <img src="images/fa.png"></a>
+          </div>
+          <div class="footerImg right">
+            <img src="images/re.png"/>
+          </div>
+        </li>
+      </ul>
+
+    </div><!-- END FOOTER MENU -->
+  </div><!-- END FOOTER WRAP -->
+</div><!--  END   GLOBAL WRAPPER -->
+
+<script src="js/panelToggle.js"></script>
 
 </body>
 
