@@ -94,6 +94,7 @@
     margin-right:7em;
   }
   .dropMenus{
+    float: left;
     overflow: hidden;
     margin: 0.7em 0em 0.3em 1em;
   }
@@ -263,7 +264,7 @@ background: #f3f6f6;
   padding-bottom: 1em;
   margin-left: 8%;
   margin-right: 9%;
-  border-top: 1px solid black; /*#f3f6f6*/
+  border-top: 1px solid #f3f6f6; /*#f3f6f6*/
 }
 .bodyHeading h2{
   font-weight: 400;
