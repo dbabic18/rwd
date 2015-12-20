@@ -8,10 +8,10 @@
 </head>
 <body>
  <div class="wrapper"><!-- GLOBAL WRAPPER -->
-    <div class="navWrapper clearfix"><!-- NAVIGATION WRAPPER -->
+    <div class="navWrapper "><!-- NAVIGATION WRAPPER -->
       <div class="navBar"><!-- NAV CONTAINER -->
 
-       <div class="firstNav"><!-- FIRST ROW OF NAVIGATION -->
+       <div class="firstNav clearfix"><!-- FIRST ROW OF NAVIGATION -->
         <ul class="left">
          <li><a href="#">Home</a></li>
          <li><a href="#">About</a></li>
@@ -25,7 +25,7 @@
         </ul>
       </div><!-- END   FIRST ROW OF NAVIGATION-->
 
-      <div class="secondNav"><!-- SECOND ROW OF NAVIGATION -->
+      <div class="secondNav clearfix"><!-- SECOND ROW OF NAVIGATION -->
         <ul class="left logoMenu">
           <div class="logo clearfix">
             <li><a href="#"><img src="images/Logo.png"/></a></li>
@@ -67,7 +67,7 @@
                   Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempo
                   Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempo
                 </p>
-                <a class="btn btnDetails" href="#">Detail</a>
+                <a class="btn" id="btnDetails" href="#">Detail</a>
                 <p class="price"><span class="oldPromoPrice">$150 </span> $120</p>
                 </div>
             </li>
@@ -82,7 +82,9 @@
     </div>
   </div><!--END SLIDER WRAPPER -->
 
-
+  <div class="bodyHeading">
+    <h2>Kitchen utensils</h2>
+  </div>
 
 
   <div class="bodyWrapper"><!-- BODY WRAPPER -->
@@ -113,15 +115,15 @@
           </div>
           <div class="colPanel">
             <ul class="menuStyle" id="colors">
-              <li id="purple">Purple</li>
-              <li id="blue">Blue</li>
-              <li id="green">Green</li>
-              <li id="yellow">Yellow</li>
-              <li id="orange">Orange</li>
-              <li id="red">Red</li>
-              <li id="gray">Gray</li>
-              <li id="black">Black</li>
-              <li id="multicolor">Multicolor</li>
+              <li id="purple">Purple<input type="checkbox"></li>
+              <li id="blue">Blue<input type="checkbox"></li>
+              <li id="green">Green<input type="checkbox"></li>
+              <li id="yellow">Yellow<input type="checkbox"></li>
+              <li id="orange">Orange<input type="checkbox"></li>
+              <li id="red">Red<input type="checkbox"></li>
+              <li id="gray">Gray<input type="checkbox"></li>
+              <li id="black">Black<input type="checkbox"></li>
+              <li id="multicolor">Multicolor<input type="checkbox"></li>
             </ul>
           </div>
         </div>
@@ -132,11 +134,11 @@
           </div>
           <div class="matPanel">
             <ul class="menuStyle">
-              <li>All</li>
-              <li>Steel</li>
-              <li>Plastic</li>
-              <li>Ceramics</li>
-              <li>Wood</li>
+              <li>All<input id="radio1" type="radio" name="radio"/></li>
+              <li>Steel<input id="radio2" type="radio" name="radio"/></li>
+              <li>Plastic<input id="radio3" type="radio" name="radio"/></li>
+              <li>Ceramics<input id="radio4" type="radio" name="radio"/></li>
+              <li>Wood<input id="radio5" type="radio" name="radio"/></li>
             </ul>
           </div>
         </div>
@@ -145,12 +147,12 @@
           <p>MORE OPTIONS</p>
         </div>
         </div>
-        <a href="#"><img src="images/img1.png" /></a>
+        <a id="banner" href="#"><img src="images/img1.png" /></a>
       </div><!-- END  SIDE MENU-->
 
 
 
-      <div class="itemGrid right"><!-- GRID OF ITEMS -->
+      <div class="itemGrid"><!-- GRID OF ITEMS -->
 
         <div class="item">
           <img src="http://placehold.it/260x200">
