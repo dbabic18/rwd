@@ -637,6 +637,13 @@ background: #f3f6f6;
   .itemMenuWrap{
     width: 100%;
   }
+
+  .promoSlide{
+
+    padding-right: 0.2em;
+
+  }
+
 }
 @media only screen and (max-width: 814px){
   .sliderWrapper{
